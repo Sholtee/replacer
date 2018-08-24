@@ -1,0 +1,26 @@
+{
+  "name": "replacer",
+  "description": "A replacer that supports interpolation",
+  "version": "0.0.1",
+  "private": true,
+  "contributors": [{
+    "name": "Denes Solti",
+    "email": "sodnaatx@gmail.com"
+  }],
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "keywords": [
+    "interpolation",
+    "replacerfile-component"
+  ],
+  "main": "lib/replacer.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sholtee/replacer.git"
+  }
+}
