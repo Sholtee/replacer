@@ -9,18 +9,18 @@ A replacer that supports interpolation.
 via npm:
 
 ```bash
-$ npm install replacer
+$ npm install @sholtee/replacer
 ```
 
 ## API
 
 ```js
-var replace = require('replacer');
+var replace = require('@sholtee/replacer');
 
 // compile
 var result = replace('Some #{val_1} with #{fn()}.', {
     val_1: 'string',
-	fn: () => 'extra'
+    fn: () => 'extra'
 });
 
 console.log(result); // will print: "Some string with extra."
