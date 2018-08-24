@@ -16,7 +16,7 @@
   },
   "keywords": [
     "interpolation",
-    "replacerfile-component"
+    "replacer"
   ],
   "main": "lib/replacer.js",
   "repository": {
