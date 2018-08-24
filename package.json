@@ -1,5 +1,5 @@
 {
-  "name": "replacer",
+  "name": "@sholtee/replacer",
   "description": "A replacer that supports interpolation",
   "version": "0.0.1",
   "contributors": [{
