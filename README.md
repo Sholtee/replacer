@@ -18,8 +18,8 @@ $ npm install @sholtee/replacer
 var replace = require('@sholtee/replacer');
 
 // compile
-var result = replace('Some #{val_1} with #{fn()}.', {
-    val_1: 'string',
+var result = replace('Some #{val} with #{fn()}.', {
+    val: 'string',
     fn: () => 'extra'
 });
 
@@ -30,7 +30,8 @@ console.log(result); // will print: "Some string with extra."
 
  - `src`  The source string to be processed
  - `context`  The context in which the interpolation will be applied
-
+ - `[markup]` Optional regex to override the interpolation markup (default is `#{...}`)
+ 
 ## License
 
 MIT
