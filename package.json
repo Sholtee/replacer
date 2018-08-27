@@ -2,6 +2,7 @@
   "name": "@sholtee/replacer",
   "description": "A replacer that supports interpolation",
   "version": "0.0.2",
+  "license": "MIT",
   "contributors": [{
     "name": "Denes Solti",
     "email": "sodnaatx@gmail.com"
