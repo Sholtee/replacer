@@ -7,9 +7,9 @@
     "name": "Denes Solti",
     "email": "sodnaatx@gmail.com"
   }],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "tape": "^4.9.1"
   },
   "engines": {
     "node": ">=0.8.0"
