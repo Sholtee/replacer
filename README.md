@@ -18,7 +18,7 @@ $ npm install @sholtee/replacer
 var replace = require('@sholtee/replacer');
 
 // compile
-var result = replace('Some #{val} with #{fn()} and \#{escaped content}.', {
+var result = replace('Some #{val} with #{fn()} and \\#{escaped content}.', {
     val: 'string',
     fn: () => 'extra'
 });
