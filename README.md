@@ -18,12 +18,12 @@ $ npm install @sholtee/replacer
 var replace = require('@sholtee/replacer');
 
 // compile
-var result = replace('Some #{val} with #{fn()}.', {
+var result = replace('Some #{val} with #{fn()} and \#{escaped content}.', {
     val: 'string',
     fn: () => 'extra'
 });
 
-console.log(result); // will print: "Some string with extra."
+console.log(result); // will print: "Some string with extra and #{escaped content}."
 ```
 
 ### Paramz
