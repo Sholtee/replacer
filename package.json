@@ -1,7 +1,7 @@
 {
   "name": "@sholtee/replacer",
   "description": "A replacer that supports interpolation",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "contributors": [{
     "name": "Denes Solti",
