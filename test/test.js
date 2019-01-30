@@ -4,6 +4,7 @@
 ********************************************************************************/
 'use strict';
 
+(function(require) {
 const
     replace = require('../lib/replacer.js'),
     test    = require('tape');
@@ -43,3 +44,14 @@ test('escaping test', t => {
 
     t.equal(actual, expected);
 });
+
+test('compile test', t => {
+    t.plan(3);
+
+    const replaceFn = replace.compile('Some #{val_1} with #{val_2}.');
+    t.ok(typeof replaceFn === 'function');
+
+    t.equal(replaceFn({val_1: 'text', val_2: 'extra'}), 'Some text with extra.');
+    t.equal(replaceFn({val_1: 'meat', val_2: 'pasta'}), 'Some meat with pasta.');
+});
+})(require);
