@@ -9,6 +9,12 @@ const
     replace = require('../lib/replacer.js'),
     test    = require('tape');
 
+test('normalizing test', t => {
+    t.plan(2);
+    t.equal(replace.$$normalizeExpression('obj1.prop+obj2.call()'), 'obj1.prop+obj2.call()');
+    t.equal(replace.$$normalizeExpression('  obj1.prop +        obj2.call() '), 'obj1.prop+obj2.call()');
+});
+
 test('multiple interpolation test', t => {
     t.plan(1);
 
