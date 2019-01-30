@@ -79,6 +79,12 @@ console.log(result); // will print: "Some string with extra and #{escaped conten
 ### markups
 Replacer comes with several built in markup styles (default is `#{...}`) available via the this property. You may use the consts found here as the `markup` parameter (see before). Note, you can even use arbitrary regex to define markups.
 
+#### Built in styles
+
+ - DEFAULT: `#{...}`
+ - ERB: `<%=...%>`
+ - DOUBLE_BRACES: `{{...}}`  
+
 #### Usage example:
 
 ```js
