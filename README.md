@@ -65,7 +65,7 @@ const replacer = require('@sholtee/replacer');
 .
 
 // compile
-const replace result = replacer.compile('Some #{val} with #{fn()} and \\#{escaped content}.');
+const replace = replacer.compile('Some #{val} with #{fn()} and \\#{escaped content}.');
  
 // render 
 const result = replace({
