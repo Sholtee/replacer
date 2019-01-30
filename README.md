@@ -29,10 +29,13 @@ The rendered string.
 #### Usage example:
 
 ```js
-var replace = require('@sholtee/replacer');
+const replace = require('@sholtee/replacer');
+.
+.
+.
 
 // render
-var result = replace('Some #{val} with #{fn()} and \\#{escaped content}.', {
+const result = replace('Some #{val} with #{fn()} and \\#{escaped content}.', {
     val: 'string',
     fn: () => 'extra'
 });
@@ -56,7 +59,10 @@ A rendering function which has the following one parameter
 #### Usage example:
 
 ```js
-var replacer = require('@sholtee/replacer');
+const replacer = require('@sholtee/replacer');
+.
+.
+.
 
 // compile
 const replace result = replacer.compile('Some #{val} with #{fn()} and \\#{escaped content}.');
@@ -68,6 +74,23 @@ const result = replace({
 });
 
 console.log(result); // will print: "Some string with extra and #{escaped content}."
+```
+
+### markups
+Replacer comes with several built in markup styles (default is `#{...}`) available via the this property. You may use the consts found here as the `markup` parameter (see before). Note, you can even use arbitrary regex to define markups.
+
+#### Usage example:
+
+```js
+const replace = require('@sholtee/replacer');
+.
+.
+.
+
+// render
+const result = replace('Some <%= val %>.', {val: 'string'}, replace.markups.ERB);
+
+console.log(result); // will print: "Some string."
 ```
 
 ## License
