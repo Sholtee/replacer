@@ -9,12 +9,6 @@ const
     replace = require('../lib/replacer.js'),
     test    = require('tape');
 
-test('normalizing test', t => {
-    t.plan(2);
-    t.equal(replace.$$normalizeExpression('obj1.prop+obj2.call()'), 'obj1.prop+obj2.call()');
-    t.equal(replace.$$normalizeExpression('  obj1.prop +        obj2.call() '), 'obj1.prop+obj2.call()');
-});
-
 [[replace.markups.DEFAULT, '#{', '}'], [replace.markups.ERB, '<%=', '%>'], [replace.markups.DOUBLE_BRACES, '{{', '}}']].forEach(([markup, ipStart, ipEnd]) => {
 
 test('multiple interpolation test', t => {
