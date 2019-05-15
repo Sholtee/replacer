@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Sholtee/replacer.svg?branch=master)](https://travis-ci.org/Sholtee/replacer)
 # Replacer
 
 A replacer that supports interpolation.
